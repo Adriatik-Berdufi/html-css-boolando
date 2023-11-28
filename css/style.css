@@ -8,6 +8,12 @@
   list-style-type: none;
 }
 /** Generic **/
+a {
+  color: white;
+}
+a:hover {
+  color: blue;
+}
 
 /** Utility **/
 .conteiner {
@@ -17,9 +23,7 @@
 
   border: 2px dashed black;
 }
-a {
-  color: white;
-}
+
 /** Header **/
 
 .header {
@@ -53,29 +57,82 @@ a {
   row-gap: 50px;
 }
 .conteiner__main__item {
-  height: 460px;
+  height: 530px;
   width: calc(100% / 3 - 25px);
   /* debug*/
   background-color: aqua;
-  border: 1px solid black;
+  border: 1px solid rgb(208, 9, 9);
 }
-.conteiner__main__item__img {
-  height: 400px;
-}
+
 .conteiner__main__item__description {
+  line-height: 15px;
+  height: 50px;
+  margin: 10px 0;
   /* debug*/
   border: 1px solid black;
 }
-/** description product**/
-.marca {
+/** foto product**/
+.conteiner__main__item__img {
+  position: relative;
+  height: 465px;
+}
+.conteiner__main__item__img .img,
+.conteiner__main__item__img .img-hover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/** sales ***/
+.sales-sostenibilita {
+  position: absolute;
+  bottom: 10px;
   font-size: 12px;
 }
+.hearts {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.hearts__button {
+  padding: 3px 6px;
+  font-size: 22px;
+  color: gray;
+  border: none;
+}
+.sale {
+  padding: 3px 6px;
+  background-color: red;
+}
+.sostenibilita {
+  padding: 3px 6px;
+  background-color: green;
+}
+/** hover-img**/
+.hearts:hover .hearts__button {
+  color: red;
+}
+
+.img-hover {
+  display: none;
+}
+.conteiner__main__item__img:hover .img {
+  display: none;
+}
+.conteiner__main__item__img:hover .img-hover {
+  display: block;
+}
+
+/** description product**/
+
+.marca-product {
+  font-size: 10px;
+}
 .name-product {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 .price {
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
 }
 .price__new-price {
