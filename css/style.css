@@ -46,6 +46,7 @@ a {
 /** main **/
 .conteiner__main {
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -82,4 +83,31 @@ a {
 }
 .price__old-price {
   text-decoration: line-through;
+}
+
+/**** Footer *****/
+.footer {
+  background-color: rgb(12, 11, 11);
+  color: whitesmoke;
+}
+.conteiner__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+
+  /*debug*/
+  background-color: gray;
+}
+.azzienda {
+  font-size: 14px;
+  font-weight: bold;
+}
+.azzienda__info {
+  line-height: 20px;
+  font-size: 10px;
+}
+.conteiner__footer__social {
+  font-size: 10px;
+  font-weight: bold;
 }
