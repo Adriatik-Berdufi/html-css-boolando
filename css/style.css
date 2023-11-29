@@ -46,8 +46,8 @@ body {
   display: inline;
   color: white;
 }
-#header__logo {
-  height: 30px;
+.header__logo {
+  height: 20px;
 }
 
 /** main **/
